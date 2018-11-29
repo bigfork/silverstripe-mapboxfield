@@ -2,7 +2,7 @@
 
 Adds a Mapbox map to the CMS with a draggable marker to allow content authors to add a location to a DataObject or Page.
 
-<img src="docs/img/cms.png" width="1427" height="1147" alt="" />
+<img src="docs/img/cms.png" alt="" />
 
 ## Installation
 
