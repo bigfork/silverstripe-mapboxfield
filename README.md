@@ -26,7 +26,7 @@ class MyDataObject extends DataObject
 {
     private static $db = [
         'Latitude' => 'Decimal(10, 8)',
-        'Longitude' => 'Decimal(10, 8)'
+        'Longitude' => 'Decimal(11, 8)'
     ];
 
     public function getCMSFields()
