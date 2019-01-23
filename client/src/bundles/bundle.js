@@ -12,10 +12,18 @@ jQuery.entwine('ss', ($) => {
     }
   });
 
+  // Render when tab containing field is selected
   $('.cms-edit-form [aria-hidden="false"] .mapbox').entwine({
     onmatch() {
       this._super();
+      this.getMapboxField().render();
+    }
+  });
 
+  // Assume field not contained in a tabset is already visible
+  $('.cms-edit-form .mapbox:not(.tabset .mapbox)').entwine({
+    onmatch() {
+      this._super();
       this.getMapboxField().render();
     }
   });
