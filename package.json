@@ -8,7 +8,7 @@
     "lint": "eslint client/src; sass-lint -v"
   },
   "dependencies": {
-    "jquery": "^3.4.0"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "@silverstripe/webpack-config": "^1.0.0",
