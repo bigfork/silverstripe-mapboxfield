@@ -12,6 +12,6 @@
   },
   "devDependencies": {
     "@silverstripe/webpack-config": "^1.0.0",
-    "webpack": "^2.7.0"
+    "webpack": "^5.94.0"
   }
 }
