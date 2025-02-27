@@ -1,13 +1,10 @@
 class MapboxField {
     /**
-     * @param {jQuery} $container
+     * @param {HTMLElement} $container
      */
     constructor($container) {
         this.$container = $container;
         this.rendered = false;
-
-        console.log("MapboxField constructor");
-        console.log(this.$container);
     }
 
     /**
@@ -36,7 +33,7 @@ class MapboxField {
     }
 
     /**
-     * @returns {jQuery}
+     * @returns {HTMLElement}
      * @private
      */
     _getLngField() {
@@ -44,7 +41,7 @@ class MapboxField {
     }
 
     /**
-     * @returns {jQuery}
+     * @returns {HTMLElement}
      * @private
      */
     _getLatField() {
@@ -61,10 +58,15 @@ class MapboxField {
 
         // Set up map
         mapboxgl.accessToken = MapboxField._getAccessToken();
+
+        // const container = this.$container.querySelector(".mapbox__map");
+        const container = this.$container.find(".mapbox__map").get(0);
+        const style = container.dataset.mapboxStyle;
+
         const map = new mapboxgl.Map({
+            container: container,
+            style: style,
             center: this._getLngLatValue(),
-            container: this.$container.find(".mapbox__map").get(0),
-            style: "mapbox://styles/mapbox/basic-v9",
             zoom: 15,
         });
 
@@ -83,6 +85,7 @@ class MapboxField {
         // Add geocoder to map
         const geocoder = new MapboxGeocoder({
             accessToken: MapboxField._getAccessToken(),
+            mapboxgl: mapboxgl,
         });
         map.addControl(geocoder);
 

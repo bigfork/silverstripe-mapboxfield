@@ -29,4 +29,10 @@ class MapboxField extends CompositeField
         $this->setTitle($title);
         $this->addExtraClass('stacked');
     }
+
+    public function getMapboxStyle()
+    {
+        $config = MapboxField::config();
+        return $config->style;
+    }
 }

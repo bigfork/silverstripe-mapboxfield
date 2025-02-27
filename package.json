@@ -7,9 +7,6 @@
     "build": "NODE_ENV=production vite build;",
     "lint": "eslint client/src; sass-lint -v"
   },
-  "dependencies": {
-    "jquery": "^3.7.1"
-  },
   "devDependencies": {
     "sass-embedded": "^1.85.1",
     "vite": "^6.2.0"

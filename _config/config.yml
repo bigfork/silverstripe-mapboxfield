@@ -3,10 +3,11 @@ Name: silverstripe-mapboxfield
 ---
 Bigfork\SilverStripeMapboxField\MapboxField:
   access_token: ""
-  api_css_url: "https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css"
-  api_javascript_url: "https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js"
-  geocoder_css_url: "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css"
-  geocoder_javascript_url: "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js"
+  api_css_url: "https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css"
+  api_javascript_url: "https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"
+  geocoder_css_url: "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.css"
+  geocoder_javascript_url: "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"
+  style: "mapbox://styles/mapbox/standard"
 SilverStripe\Admin\LeftAndMain:
   extensions:
     - 'Bigfork\SilverStripeMapboxField\LeftAndMainExtension'

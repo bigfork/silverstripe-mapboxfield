@@ -26,6 +26,7 @@ export default defineConfig(({ command }) => {
         publicDir: false,
         esbuild: {
             target: "es2019",
+            minifyIdentifiers: false,
         },
     };
 });
