@@ -17,7 +17,10 @@ After: 'silverstripe-mapboxfield'
 ---
 Bigfork\SilverStripeMapboxField\MapboxField:
   access_token: '<your mapbox key>'
+  style: 'mapbox://styles/mapbox/standard'
 ```
+
+The style is optional, and defaults to `mapbox://styles/mapbox/standard` but allows you to specify a different style if you need more control.
 
 ## Usage
 
