@@ -1,4 +1,4 @@
-import "../styles/bundle.scss";
+import "../styles/app.scss";
 import MapboxField from "../components/MapboxField/MapboxField";
 
 jQuery.entwine("ss", ($) => {

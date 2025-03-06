@@ -59,7 +59,6 @@ class MapboxField {
         // Set up map
         mapboxgl.accessToken = MapboxField._getAccessToken();
 
-        // const container = this.$container.querySelector(".mapbox__map");
         const container = this.$container.find(".mapbox__map").get(0);
         const style = container.dataset.mapboxStyle;
 

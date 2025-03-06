@@ -11,10 +11,7 @@ export default defineConfig(({ command }) => {
             outDir: path.resolve(__dirname, "client/dist"),
             rollupOptions: {
                 input: {
-                    app: path.resolve(
-                        __dirname,
-                        "client/src/bundles/bundle.js"
-                    ),
+                    app: path.resolve(__dirname, "client/src/js/index.js"),
                 },
                 output: {
                     entryFileNames: "app.js",
