@@ -1,17 +1,17 @@
 {
   "name": "@bigfork/silverstripe-mapboxfield",
-  "version": "1.0.0",
+  "type": "module",
+  "version": "1.1.0",
   "scripts": {
-    "build": "yarn && NODE_ENV=production webpack -p --bail --progress",
-    "watch": "yarn && NODE_ENV=development webpack --watch --progress",
-    "css": "WEBPACK_CHILD=css npm run build",
+    "start": "NODE_ENV=dev vite",
+    "build": "NODE_ENV=production vite build;",
     "lint": "eslint client/src; sass-lint -v"
   },
-  "dependencies": {
-    "jquery": "^3.5.0"
-  },
   "devDependencies": {
-    "@silverstripe/webpack-config": "^1.0.0",
-    "webpack": "^2.7.0"
+    "sass-embedded": "^1.85.1",
+    "vite": "^6.2.0"
+  },
+  "engines": {
+    "node": "20"
   }
 }
